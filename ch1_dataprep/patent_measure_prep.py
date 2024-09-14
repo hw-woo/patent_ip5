@@ -17,7 +17,7 @@ from dateutil.relativedelta import relativedelta
 # 1. IPC Code Cleansing: Make an IPC subclass #
 ###############################################
 def ipc_filter(): # df_ipc_simple = pmp_kw.ipc_filter()
-    
+    # Required File (1): "table4_ipc.pkl"
     tot_start_time = time.time() # Record the start time
     tot_start = time.strftime('%Y.%m.%d - %H:%M:%S')
     
@@ -144,7 +144,8 @@ def make_measures(country_select, year_select, big5_vs_domestic = True): # (e.g.
     # *country_select = {"us", "ep", "cn", "kr", "jp"} 
     # *year_select = {1975, 1976, ..., 2023}
     # *big5_vs_domestic = True (citations within Big5 countries) or False (citations within only the same one country)
-    
+
+    # Required Files (n): "table4_ipc_clean_simple.pkl", "PATSTAT_Tables_raw_each.zip (10.7GB)"
     tot_start_time = time.time() # Record the start time
     tot_start = time.strftime('%Y.%m.%d - %H:%M:%S')
     
