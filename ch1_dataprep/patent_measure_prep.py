@@ -18,6 +18,8 @@ from dateutil.relativedelta import relativedelta
 ###############################################
 def ipc_filter(): # df_ipc_simple = pmp_kw.ipc_filter()
     # Required File (1): "table4_ipc.pkl"
+    initial_path = os.getcwd()
+    
     tot_start_time = time.time() # Record the start time
     tot_start = time.strftime('%Y.%m.%d - %H:%M:%S')
     
@@ -129,8 +131,11 @@ def ipc_filter(): # df_ipc_simple = pmp_kw.ipc_filter()
     print("@ End time =", time.strftime('%Y.%m.%d - %H:%M:%S'))
     print(f"The execution time: {round(duration, 3)} seconds.")
 
-    # df_ipc_simple.to_pickle('table4_ipc_clean_simple.pkl') # TO SAVE THE IPC CLEANSING DATA (.pkl)
-    # df_ipc_simple..to_csv('table4_ipc_clean_simple.csv', index=False) # TO SAVE THE IPC CLEANSING DATA (.csv)
+    df_ipc_simple.to_pickle('table4_ipc_clean_simple.pkl') # TO SAVE THE IPC CLEANSING DATA (.pkl)
+    df_ipc_simple.to_csv('table4_ipc_clean_simple.csv', index=False) # TO SAVE THE IPC CLEANSING DATA (.csv)
+
+    os.chdir(initial_path)
+    print("Reverted to initial directory:", os.getcwd())
 
     return df_ipc_simple
 
@@ -144,8 +149,10 @@ def make_measures(country_select, year_select, big5_vs_domestic = True): # (e.g.
     # *country_select = {"us", "ep", "cn", "kr", "jp"} 
     # *year_select = {1975, 1976, ..., 2023}
     # *big5_vs_domestic = True (citations within Big5 countries) or False (citations within only the same one country)
-
+    
     # Required Files (n): "table4_ipc_clean_simple.pkl", "PATSTAT_Tables_raw_each.zip (10.7GB)"
+    initial_path = os.getcwd()
+    
     tot_start_time = time.time() # Record the start time
     tot_start = time.strftime('%Y.%m.%d - %H:%M:%S')
     
@@ -744,9 +751,15 @@ def make_measures(country_select, year_select, big5_vs_domestic = True): # (e.g.
     print("@ Start time =", tot_start)
     print("@ End time =", time.strftime('%Y.%m.%d - %H:%M:%S'))
     print(f"The execution time: {round(duration, 3)} seconds.")
+    
+    os.chdir(initial_path)
+    folder_path = f'../ch2_big5_scale/patstat_each_nation_year_vars/{country_select.upper()}' # Set saving path
+    os.chdir(folder_path)
+    df_main.to_pickle(f'pat_IPC4_allC_{country_select.lower_case()}_{year_select}.pkl') # Dataset based on each patent application
 
-    # df_main.to_pickle(f'pat_IPC4_allC_{country_select.lower_case()}_{year_select}.pkl') # Dataset based on each patent application
-
+    os.chdir(initial_path)
+    print("Reverted to initial directory:", os.getcwd())
+    
     return df_main
 
 
