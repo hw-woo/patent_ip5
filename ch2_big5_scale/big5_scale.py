@@ -95,9 +95,9 @@ def make_scale(select_country, year_start, year_end):
     return final_df_appln, final_df_appln_count, final_df_appln_grantY, final_df_appln_grantY_count, final_df_publn, final_df_publn_count, final_df_publn_grantY, final_df_publn_grantY_count
 
 
-############################################################################################
-# 2. Make scale values for each country X year X {application-based vs. publication-based} #
-############################################################################################
+############################################
+# 2. Scaling values based on NBER Matching #
+############################################
 def nber_match_field(select_country, year_start, year_end): 
     # = bs_kw.nber_match_field("US", 1975, 2023)
     # = bs_kw.nber_match_field("EP", 1978, 2023)
