@@ -176,9 +176,9 @@ def nber_match_field(select_country, year_start, year_end):
     return final_df_appln, final_df_appln_count, final_df_appln_grantY, final_df_appln_grantY_count, final_df_publn, final_df_publn_count, final_df_publn_grantY, final_df_publn_grantY_count
     
 
-#################################################
-# 3. Combine the IP5-patents into one dataframe #
-#################################################
+##############################################################
+# 3. Combine the IP5-patents (NBER-based) into one dataframe #
+##############################################################
 def combine_nber():
     # bs_kw.combine_nber()
 
