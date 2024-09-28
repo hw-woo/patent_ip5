@@ -12,5 +12,5 @@ If you use our data or any part of it in your research, please use the following
     title = "{Patent Wars: Attack of the IP5 Metrics}",
     journal = {Working Paper},
     year = {2024},
-    url = {https://github.com/hw-woo/patent_ip5},
+    url = {https://github.com/hw-woo/patent_ip5}
 }
