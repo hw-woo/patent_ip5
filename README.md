@@ -4,12 +4,12 @@
 ## Citation
 If you use our data or any part of it in your research, please use the following cite:
 
-`Kim, Kyoungwon and Woo, Hyunwoo, "Patent Wars: Attack of the IP5 Metrics", Working Paper 2024`
+`Woo, Hyunwoo, "Patent Wars: Attack of the IP5 Metrics", Working Paper 2024`
 
 #### BibTex:
 `@article{ip5pat_kimwoo,
-    author = {Kyoungwon Kim and Hyunwoo Woo},
-    title = "{Patent Wars: Attack of the IP5 Metrics}",
+    author = {Hyunwoo Woo},
+    title = "{Patent scaling information for academia: More precise and multi-national}",
     journal = {Working Paper},
     year = {2024},
     url = {https://github.com/hw-woo/patent_ip5}
