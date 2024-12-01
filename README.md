@@ -10,7 +10,7 @@ If you use our data or any part of it in your research, please use the following
 `@article{ip5pat_woo,
     author = {Hyunwoo Woo},
     title = "{Patent scaling information for academia: More precise and multi-national}",
-    journal = {Working Paper},
+    journal = {Working Paper. Available at https://github.com/hw-woo/patent\_ip5},
     year = {2024},
     url = {https://github.com/hw-woo/patent_ip5}
 }`
