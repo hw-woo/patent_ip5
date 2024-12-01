@@ -7,7 +7,7 @@ If you use our data or any part of it in your research, please use the following
 `Woo, Hyunwoo, "Patent scaling information for academia: More precise and multi-national", Working Paper 2024`
 
 #### BibTex:
-`@article{ip5pat_kimwoo,
+`@article{ip5pat_woo,
     author = {Hyunwoo Woo},
     title = "{Patent scaling information for academia: More precise and multi-national}",
     journal = {Working Paper},
