@@ -4,11 +4,11 @@
 ## Citation
 If you use our data or any part of it in your research, please use the following cite:
 
-`Woo, Hyunwoo, "Patent scaling information for academia: More precise and multi-national", Working Paper 2024`
+`Woo, Hyunwoo and Kim, Kyoungwon, "Patent scaling information for academia: More precise and multi-national", Working Paper 2024`
 
 #### BibTex:
 `@article{ip5pat_woo,
-    author = {Hyunwoo Woo},
+    author = {Hyunwoo Woo, Kyoungwon Kim},
     title = "{Patent scaling information for academia: More precise and multi-national}",
     journal = {Working Paper. Available at https://github.com/hw-woo/patent\_ip5},
     year = {2024},
